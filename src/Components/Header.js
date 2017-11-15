@@ -1,13 +1,19 @@
 import React from 'react';
 
+const headerPadding = '100px';
+const NavLink = ({ icon, id }) =>
+  <li>
+    <a href={`#${id.toLowerCase()}`}><i className={`glyphicon glyphicon-${icon}`} style={{ marginRight: '5px' }}></i>{id}</a>
+  </li>;
+
 const Header = () =>
   <div className="navbar navbar-default navbar-fixed-top">
-    <div className="container-fluid">
+    <div className="container-fluid" style={{ paddingLeft: headerPadding, paddingRight: headerPadding }}>
       <div className="navbar-brand">Software Developer</div>
       <ul className="nav navbar-nav navbar-right">
-        <li className="active"><a href="#home">Home</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <NavLink id="Home" icon="home" />
+        <NavLink id="Works" icon="briefcase" />
+        <NavLink id="Contact" icon="phone-alt" />
       </ul>
     </div>
   </div>;

@@ -10,7 +10,7 @@ import Footer from './Components/Footer';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div style={{ paddingTop: '65px' }}>
         <Header />
         <Intro />
         <Works />
