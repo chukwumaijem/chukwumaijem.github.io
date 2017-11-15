@@ -6,8 +6,7 @@
   "scripts": {
     "build": "webpack -p",
     "watch": "webpack -d --watch",
-    "start": "pushstate-server app",
-    "deploy": "npm run build && gh-pages -d app"
+    "start": "pushstate-server ."
   },
   "repository": {
     "type": "git",
