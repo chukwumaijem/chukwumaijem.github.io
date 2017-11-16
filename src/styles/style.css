@@ -1,0 +1,35 @@
+.header-color {
+  background-color: #191C0F;
+  color: #E3DDCB;
+}
+.nav-item {
+  color: #E3DDCB;
+}
+.nav-item:hover {
+  color: #191C0F;
+  background-color: #E3DDCB;
+}
+.intro-image {
+  background-image: url('../images/main-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 840px;
+}
+.dev-description {
+  float: right;
+  padding-right: 10px;
+}
+.dev-name {
+  font-size: 100px;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+  color: white;
+  display: block;
+  text-align: center;
+}
+.dev-detail {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #191C0F;
+}

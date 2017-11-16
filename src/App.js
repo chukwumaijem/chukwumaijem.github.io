@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/style.css';
 
 import Header from './Components/Header';
 import Intro from './Components/Intro';
@@ -10,7 +11,7 @@ import Footer from './Components/Footer';
 class App extends Component {
   render() {
     return (
-      <div style={{ paddingTop: '65px' }}>
+      <div style={{ paddingTop: '50px' }}>
         <Header />
         <Intro />
         <Works />
