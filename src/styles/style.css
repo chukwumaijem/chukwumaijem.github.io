@@ -9,6 +9,14 @@
   color: #191C0F;
   background-color: #E3DDCB;
 }
+.footer {
+  background-color: #191C0F;
+  color: #E3DDCB;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0px;
+  width: 100%;
+}
 .intro-image {
   background-image: url('../images/main-bg.jpg');
   background-repeat: no-repeat;
@@ -32,4 +40,38 @@
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   color: #191C0F;
+}
+.form-items {
+  margin-top: 10px;
+}
+.sub-header {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 30px; 
+}
+.submit {
+  background-color: #9B8863;
+  color: white;
+}
+.submit:hover {
+  background-color: #5B5D50;
+  color: white;
+}
+.social {
+  text-align: center;
+}
+.social-links {
+  font-size: 50px;
+  margin: 5px;
+}
+.social-links.email {
+  font-size: 30px;
+  line-height: 50px;
+}
+.social a {
+  color: #9B8863;
+}
+.social a:hover {
+  color: #E3DDCB;
 }

@@ -22,6 +22,7 @@
   "homepage": "https://github.com/chukwumaijem/chukwumaijem.github.io#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
     "pushstate-server": "^3.0.1",
     "react": "^16.1.1",
     "react-dom": "^16.1.1"

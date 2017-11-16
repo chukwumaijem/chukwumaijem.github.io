@@ -5,7 +5,7 @@ const Intro = () =>
     <div className="dev-description">
       <span className="dev-name">Chukwuma Ezumezu</span>
       <span className="dev-detail">Fullstack JavaScript Developer.</span>
-      <span className="dev-detail">Come, let me build your dream</span>
+      <span className="dev-detail">Sapere aude...</span>
     </div>
   </div>;
 
