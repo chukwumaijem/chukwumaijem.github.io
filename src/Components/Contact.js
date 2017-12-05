@@ -8,8 +8,8 @@ const SocialContact = ({ href, fontAwesome, name }) =>
   </div>
 
 const Contact = () =>
-  <div id="contact">
-    <span className="sub-header">Contact Me</span>
+  <div id="contact" className="col-md-12">
+    <h2 className="sub-header">Contact Me</h2>
     <form className="col-md-6 form">
       <div className="form-group">
         <label htmlFor="usr">Your Name:</label>
