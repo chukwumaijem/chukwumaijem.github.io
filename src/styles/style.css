@@ -26,9 +26,14 @@
   background-position: center;
   height: 840px;
   width: 100%;
+}
+.intro-dim {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 100, 100, 0.4)
 }
 
 .dev-name {
@@ -105,7 +110,6 @@
 @media only screen
 and (max-device-width: 900px) {
   .intro-image {
-    padding-top: 100px;
     height: 540px;
   }
   .dev-name {
@@ -120,7 +124,6 @@ and (max-device-width: 900px) {
 @media only screen
 and (max-device-width: 600px) {
   .intro-image {
-    padding-top: 200px;
     height: 400px;
   }
   .dev-name {
