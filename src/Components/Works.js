@@ -49,19 +49,23 @@ const works = [
 const Work = ({ work: { title, image, description, link } }) => {
   const id = title.split(' ')[0];
 
-  return (<div className="col-md-4 col-xs-12 col-sm-6" style={{ paddingTop: '10px' }}>
-    <img
-      src={image}
-      onMouseOver={() => { $(`#${id}`).slideToggle() }}
-      onMouseLeave={() => { $(`#${id}`).slideToggle() }}
-      style={{ width: '100%', height: '300px' }}
-    />
-    <div id={`${id}`} className="work-description">
-      <h2>{title}</h2>
-      <p>{description}</p>
-      {link && <p className="preview">View Website <a href={link} target="_blank">here</a></p>}
-    </div>
-  </div>)
+  return (
+    <div
+      className="col-md-4 col-xs-12 col-sm-6"
+      style={{ paddingTop: '10px' }}
+      onMouseEnter={() => { $(`#${id}`).slideDown() }}
+      onMouseLeave={() => { $(`#${id}`).slideUp() }}
+    >
+      <img
+        src={image}
+        style={{ width: '100%', height: '300px' }}
+      />
+      <div id={`${id}`} className="work-description">
+        <h2>{title}</h2>
+        <p>{description}</p>
+        {link && <p className="preview">View Website <a href={link} target="_blank">here</a></p>}
+      </div>
+    </div>)
 }
 
 const Works = () =>
