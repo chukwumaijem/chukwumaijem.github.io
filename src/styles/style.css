@@ -1,6 +1,9 @@
-.header-color {
+.header-bg-color {
   background-color: #191C0F;
   color: #E3DDCB;
+}
+.button-collape {
+  background-color: #E3DDCB;
 }
 .nav-item {
   color: #E3DDCB;
@@ -22,11 +25,12 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 840px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
-.dev-description {
-  float: right;
-  padding-right: 10px;
-}
+
 .dev-name {
   font-size: 100px;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
@@ -39,7 +43,7 @@
   text-align: center;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #191C0F;
+  color: #E9E6BB;
 }
 .form-items {
   margin-top: 10px;
@@ -59,19 +63,70 @@
   color: white;
 }
 .social {
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 .social-links {
   font-size: 50px;
   margin: 5px;
 }
-.social-links.email {
-  font-size: 30px;
-  line-height: 50px;
+.fa-facebook-square-color a {
+  color: #4468b0;
 }
-.social a {
-  color: #9B8863;
+.fa-facebook-square-color a:hover {
+  color: #6680d2;
 }
-.social a:hover {
-  color: #E3DDCB;
+.fa-twitter-square-color a {
+  color: #50b4f2;
+}
+.fa-twitter-square-color a:hover {
+  color: #7bd6f4;
+}
+.fa-github-square-color a {
+  color: #25292e;
+}
+.fa-github-square-color a:hover {
+  color: #555;
+}
+.fa-linkedin-square-color a {
+  color: #1178b3;
+}
+.fa-linkedin-square-color a:hover {
+  color: #55abf7;
+}
+.fa-stack-overflow-color a {
+  color: #f27f33;
+}
+.fa-stack-overflow-color a:hover {
+  color: #f70;
+}
+
+/* Styling for tablets*/
+@media only screen
+and (max-device-width: 900px) {
+  .intro-image {
+    padding-top: 100px;
+    height: 540px;
+  }
+  .dev-name {
+    font-size: 70px;
+  }
+  .dev-detail {
+    font-size: 30px;
+  }
+}
+
+/* Styling for phones*/
+@media only screen
+and (max-device-width: 600px) {
+  .intro-image {
+    padding-top: 200px;
+    height: 400px;
+  }
+  .dev-name {
+    font-size: 40px;
+  }
+  .dev-detail {
+    font-size: 20px;
+  }
 }

@@ -1,5 +1,12 @@
 import React from 'react';
 
+const SocialContact = ({ href, fontAwesome, name }) =>
+  <div className={`social-links ${fontAwesome}-color`}>
+    <a href={href} target="_blank">
+      <i className={`fa ${fontAwesome}`} aria-hidden="true"></i>
+    </a>
+  </div>
+
 const Contact = () =>
   <div id="contact">
     <span className="sub-header">Contact Me</span>
@@ -20,21 +27,25 @@ const Contact = () =>
         <input type="submit" className="btn btn-custom form-control submit" />
       </div>
     </form>
-    <div className="col-md-6 social">
-      <div className="social-links email">
-        <i className="glyphicon glyphicon-envelope"></i> chukwuma.ezumezu@gmail.com
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/anselm-ezumezu-284a81b4" target="_blank">
-          <i className="fa fa-linkedin-square social-links" aria-hidden="true"></i>
-        </a>
-        <a href="https://github.com/chukwumaijem" target="_blank">
-          <i className="fa fa-github-square social-links" aria-hidden="true"></i>
-        </a>
-        <i className="fa fa-facebook-square social-links" aria-hidden="true"></i>
-        <i className="fa fa-twitter-square social-links" aria-hidden="true"></i>
-        <i className="fa fa-stack-overflow social-links" aria-hidden="true"></i>
-      </div>
+    <div className="col-md-6 col-xs-12 col-sm-12 social">
+      <SocialContact
+        href={'https://www.linkedin.com/in/anselm-ezumezu-284a81b4'}
+        fontAwesome={'fa-linkedin-square'}
+      />
+      <SocialContact
+        href={'https://github.com/chukwumaijem'}
+        fontAwesome={'fa-github-square'}
+      />
+      <SocialContact
+        href={'fa-facebook-square'}
+        fontAwesome={'fa-facebook-square'}
+      />
+      <SocialContact
+        fontAwesome={'fa-twitter-square'}
+      />
+      <SocialContact
+        fontAwesome={'fa-stack-overflow'}
+      />
     </div>
   </div>;
 
