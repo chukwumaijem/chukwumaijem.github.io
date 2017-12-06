@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import 'jquery';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import 'toastr/build/toastr.min.css';
 import './styles/style.css';
 
 import Header from './Components/Header';

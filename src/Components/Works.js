@@ -63,7 +63,7 @@ const Work = ({ work: { title, image, description, link } }) => {
       <div id={`${id}`} className="work-description">
         <h2>{title}</h2>
         <p>{description}</p>
-        {link && <p className="preview">View Website <a href={link} target="_blank">here</a></p>}
+        {link && <p className="preview"><a href={link} target="_blank">View Website here</a></p>}
       </div>
     </div>)
 }
