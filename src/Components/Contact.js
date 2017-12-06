@@ -68,7 +68,7 @@ class Contact extends Component {
     this.sendEmail(email, subject, message)
   }
   sendEmail(email, subject, message) {
-    const url = 'https://anselm-api.herokuapp.com//api/v1/emailClient/send'
+    const url = 'https://anselm-api.herokuapp.com/api/v1/emailClient/send'
     const data = { email, subject, message }
     postEndpoint(url, data)
       .then(data => {
