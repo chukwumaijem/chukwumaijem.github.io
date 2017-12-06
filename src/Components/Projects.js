@@ -6,7 +6,7 @@ import ludo from '../images/ludo.png';
 import timer from '../images/timer.png';
 import weatherApp from '../images//weather-app.png';
 
-const works = [
+const projects = [
   {
     title: 'Koshin',
     description: 'A Github client that generates reports using the description of closed PR\'s on a repo.',
@@ -15,7 +15,7 @@ const works = [
   },
   {
     title: 'SyncStore',
-    description: 'A book review app. Displays a list of books that in click, navigates to show more details on the book.',
+    description: 'A book review app. Displays a list of books that on click, navigates to show more details on the book.',
     image: syncStore,
     link: 'https://sync-store.herokuapp.com/'
   },
@@ -46,7 +46,7 @@ const works = [
 
 ];
 
-const Work = ({ work: { title, image, description, link } }) => {
+const Project = ({ project: { title, image, description, link } }) => {
   const id = title.split(' ')[0];
 
   return (
@@ -60,7 +60,7 @@ const Work = ({ work: { title, image, description, link } }) => {
         src={image}
         style={{ width: '100%', height: '300px' }}
       />
-      <div id={`${id}`} className="work-description">
+      <div id={`${id}`} className="project-description">
         <h2>{title}</h2>
         <p>{description}</p>
         {link && <p className="preview"><a href={link} target="_blank">View Website here</a></p>}
@@ -68,17 +68,17 @@ const Work = ({ work: { title, image, description, link } }) => {
     </div>)
 }
 
-const Works = () =>
-  <div id="works" className="col-md-12 sub-header">
-    <h2>Latest Works</h2>
+const Projects = () =>
+  <div id="projects" className="col-md-12 sub-header">
+    <h2>Latest Projects</h2>
     {
-      works.map((work, index) =>
-        <Work
+      projects.map((project, index) =>
+        <Project
           key={index}
-          work={work}
+          project={project}
         />
       )
     }
   </div>;
 
-export default Works;
+export default Projects;

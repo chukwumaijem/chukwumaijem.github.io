@@ -20,7 +20,7 @@ const Header = () =>
       <div className="navbar-collapse collapse" id="navbar">
         <ul className="nav navbar-nav navbar-right">
           <NavLink id="Home" icon="home" />
-          <NavLink id="Works" icon="briefcase" />
+          <NavLink id="Projects" icon="briefcase" />
           <NavLink id="Contact" icon="phone-alt" />
         </ul>
       </div>

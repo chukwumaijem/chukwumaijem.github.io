@@ -9,7 +9,7 @@ import './styles/style.css';
 
 import Header from './Components/Header';
 import Intro from './Components/Intro';
-import Works from './Components/Works';
+import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 
@@ -19,7 +19,7 @@ class App extends Component {
       <div style={{ paddingTop: '50px' }}>
         <Header />
         <Intro />
-        <Works />
+        <Projects />
         <Contact />
         <Footer />
       </div>
