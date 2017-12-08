@@ -53,8 +53,6 @@ const Project = ({ project: { title, image, description, link } }) => {
     <div
       className="col-md-4 col-xs-12 col-sm-6"
       style={{ paddingTop: '10px' }}
-      onMouseEnter={() => { $(`#${id}`).slideDown() }}
-      onMouseLeave={() => { $(`#${id}`).slideUp() }}
     >
       <img
         src={image}
