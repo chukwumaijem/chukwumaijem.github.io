@@ -1,15 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import ReactGA from 'react-ga';
 import chukwuma from '../images/chukwuma.jpg';
 import favicon from '../images/favicon.png';
 
 const Meta = () =>
   <Helmet>
-    /** Global site tag (gtag.js) - Google Analytics */
-    ReactGA.initialize('UA-110954268-1');
-    ReactGA.pageview(window.location.pathname);
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
