@@ -1,19 +1,14 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import ReactGA from 'react-ga';
 import chukwuma from '../images/chukwuma.jpg';
 import favicon from '../images/favicon.png';
 
 const Meta = () =>
   <Helmet>
     /** Global site tag (gtag.js) - Google Analytics */
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110954268-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments)}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-110954268-1');
-    </script>
+    ReactGA.initialize('UA-110954268-1');
+    ReactGA.pageview(window.location.pathname);
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
