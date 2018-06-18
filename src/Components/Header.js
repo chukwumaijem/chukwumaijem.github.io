@@ -1,30 +1,35 @@
 import React from 'react';
-
-const NavLink = ({ icon, id }) =>
-  <li>
-    <a href={`#${id.toLowerCase()}`} className="nav-item"><i className={`glyphicon glyphicon-${icon}`} style={{ marginRight: '5px' }}></i>{id}</a>
-  </li>;
+import { Menu, Icon, Responsive } from 'semantic-ui-react';
 
 const Header = () =>
-  <nav className="navbar navbar-custom navbar-fixed-top header-bg-color">
-    <div className="container-fluid">
-      <div className="navbar-header">
-        <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span className="sr-only">Toggle navigation</span>
-          <span className="icon-bar button-collape"></span>
-          <span className="icon-bar button-collape"></span>
-          <span className="icon-bar button-collape"></span>
-        </button>
-        <span className="navbar-brand">Software Developer</span>
-      </div>
-      <div className="navbar-collapse collapse" id="navbar">
-        <ul className="nav navbar-nav navbar-right">
-          <NavLink id="Home" icon="home" />
-          <NavLink id="Projects" icon="briefcase" />
-          <NavLink id="Contact" icon="phone-alt" />
-        </ul>
-      </div>
-    </div>
-  </nav>;
+  <Responsive {...Responsive.onlyComputer}>
+    <Menu fixed="top">
+      <Menu.Menu position="right" size="huge">
+        <Menu.Item name='home'>
+          <a href="#about">
+            <span className="menu-item">
+              About Me <Icon name='home' />
+            </span>
+          </a>
+        </Menu.Item>
+
+        <Menu.Item name='briefcase'>
+          <a href="#projects">
+            <span className="menu-item">
+              Projects <Icon name='briefcase' />
+            </span>
+          </a>
+        </Menu.Item>
+
+        <Menu.Item name='phone-alt'>
+          <a href="#contact">
+            <span className="menu-item">
+              Contact <Icon name='phone' />
+            </span>
+          </a>
+        </Menu.Item>
+      </Menu.Menu>
+    </Menu>
+  </Responsive>;
 
 export default Header;

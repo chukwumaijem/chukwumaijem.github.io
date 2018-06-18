@@ -50,6 +50,14 @@
   color: #E9E6BB;
   width: 70%;
 }
+.menu-item {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+a .menu-item {
+  color: black;
+}
 .form-items {
   margin-top: 10px;
 }
@@ -128,6 +136,7 @@
 .preview a {
   color: white;
 }
+
 /* Styling for tablets*/
 @media only screen
 and (max-device-width: 900px) {
@@ -146,7 +155,7 @@ and (max-device-width: 900px) {
 @media only screen
 and (max-device-width: 600px) {
   .intro-image {
-    height: 400px;
+    height: 500px;
   }
   .dev-name {
     font-size: 40px;
