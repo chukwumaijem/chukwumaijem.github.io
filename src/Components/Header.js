@@ -2,7 +2,7 @@ import React from 'react';
 import { Menu, Icon, Responsive } from 'semantic-ui-react';
 
 const Header = () =>
-  <Responsive {...Responsive.onlyComputer}>
+  <Responsive minWidth={550}>
     <Menu fixed="top">
       <Menu.Menu position="right" size="huge">
         <Menu.Item name='home'>
