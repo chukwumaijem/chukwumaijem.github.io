@@ -57,6 +57,7 @@ const Project = ({ project: { title, image, description, link } }) => {
       <img
         src={image}
         style={{ width: '100%', height: '300px' }}
+        alt={title}
       />
       <div id={`${id}`} className="project-description">
         <h2>{title}</h2>

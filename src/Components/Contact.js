@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Toastr from 'toastr';
-import helper from 'sendgrid/lib/helpers/mail/mail';
-import sendgrid from 'sendgrid/lib/sendgrid';
 
 function postEndpoint(url, data) {
   return fetch(url, {
@@ -73,7 +71,7 @@ class Contact extends Component {
     postEndpoint(url, data)
       .then(data => {
         if(data.error) {
-          return Toastr.error(`Error: ${err}`);
+          return Toastr.error(`Error: ${data.error}`);
         }
         Toastr.success('Message sent successfully!');
       })
