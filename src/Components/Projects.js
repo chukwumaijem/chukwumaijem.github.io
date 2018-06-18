@@ -1,4 +1,6 @@
 import React from 'react';
+import { Segment } from 'semantic-ui-react'
+
 import koshin from '../images/koshin.png';
 import syncStore from '../images//book-review.png';
 import serviceApi from '../images/book-api.png';
@@ -68,7 +70,7 @@ const Project = ({ project: { title, image, description, link } }) => {
 }
 
 const Projects = () =>
-  <div id="projects" className="col-md-12 sub-header">
+  <Segment id="projects" className="col-md-12 sub-header">
     <h2>Latest Projects</h2>
     {
       projects.map((project, index) =>
@@ -78,6 +80,6 @@ const Projects = () =>
         />
       )
     }
-  </div>;
+  </Segment>;
 
 export default Projects;

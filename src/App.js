@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import 'toastr/build/toastr.min.css';
+import { Container } from 'semantic-ui-react';
 import './styles/style.css';
 
 import Header from './Components/Header';
@@ -11,13 +11,13 @@ import Footer from './Components/Footer';
 class App extends Component {
   render() {
     return (
-      <div style={{ paddingTop: '50px' }}>
+      <Container fluid>
         <Header />
         <Intro />
         <Projects />
         <Contact />
         <Footer />
-      </div>
+      </Container>
     );
   }
 }

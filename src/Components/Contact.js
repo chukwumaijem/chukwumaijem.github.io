@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Segment } from 'semantic-ui-react'
 import Toastr from 'toastr';
 
 function postEndpoint(url, data) {
@@ -70,7 +71,7 @@ class Contact extends Component {
     const data = { email, subject, message }
     postEndpoint(url, data)
       .then(data => {
-        if(data.error) {
+        if (data.error) {
           return Toastr.error(`Error: ${data.error}`);
         }
         Toastr.success('Message sent successfully!');
@@ -90,32 +91,34 @@ class Contact extends Component {
 
   render() {
     return (
-      <div id="contact" className="col-md-12">
-        <h2 className="sub-header">Contact Me</h2>
-        <form className="col-md-6 form">
-          <div className="form-group">
-            <label htmlFor="usr">Your Email:</label>
-            <input ref="email" type="text" className="form-control" id="usr" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="usr">Subject:</label>
-            <input ref="subject" type="text" className="form-control" id="usr" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="usr">Message:</label>
-            <textarea ref="message" className="form-control" id="usr" rows="10"></textarea>
-          </div>
-          <div className="form-group">
-            <input
-              type="submit"
-              value="Send Mail"
-              className="btn btn-custom form-control submit"
-              onClick={this.submitEmail}
-            />
-          </div>
-        </form>
-        <SocialContacts />
-      </div>
+      <Segment>
+        <div id="contact" className="col-md-12">
+          <h2 className="sub-header">Contact Me</h2>
+          <form className="col-md-6 form">
+            <div className="form-group">
+              <label htmlFor="usr">Your Email:</label>
+              <input ref="email" type="text" className="form-control" id="usr" />
+            </div>
+            <div className="form-group">
+              <label htmlFor="usr">Subject:</label>
+              <input ref="subject" type="text" className="form-control" id="usr" />
+            </div>
+            <div className="form-group">
+              <label htmlFor="usr">Message:</label>
+              <textarea ref="message" className="form-control" id="usr" rows="10"></textarea>
+            </div>
+            <div className="form-group">
+              <input
+                type="submit"
+                value="Send Mail"
+                className="btn btn-custom form-control submit"
+                onClick={this.submitEmail}
+              />
+            </div>
+          </form>
+          <SocialContacts />
+        </div>
+      </Segment>
     )
   }
 }

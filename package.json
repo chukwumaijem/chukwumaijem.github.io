@@ -6,6 +6,8 @@
     "custom-react-scripts": "0.2.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "semantic-ui-css": "^2.3.2",
+    "semantic-ui-react": "^0.81.1",
     "toastr": "^2.1.2"
   },
   "scripts": {
