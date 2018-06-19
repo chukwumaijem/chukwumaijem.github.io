@@ -83,35 +83,36 @@ a .menu-item {
 .social-links {
   font-size: 50px;
   margin: 5px;
+  display: inline-block;
 }
-.fa-facebook-square-color a {
+.facebook a {
   color: #4468b0;
 }
-.fa-facebook-square-color a:hover {
+.facebook a:hover {
   color: #6680d2;
 }
-.fa-twitter-square-color a {
+.twitter-color a {
   color: #50b4f2;
 }
-.fa-twitter-square-color a:hover {
+.twitter-color a:hover {
   color: #7bd6f4;
 }
-.fa-github-square-color a {
+.github-color a {
   color: #25292e;
 }
-.fa-github-square-color a:hover {
+.github-color a:hover {
   color: #555;
 }
-.fa-linkedin-square-color a {
+.linkedin-color a {
   color: #1178b3;
 }
-.fa-linkedin-square-color a:hover {
+.linkedin-color a:hover {
   color: #55abf7;
 }
-.fa-stack-overflow-color a {
+.overflow-color a {
   color: #f27f33;
 }
-.fa-stack-overflow-color a:hover {
+.stack-overflow-color a:hover {
   color: #f70;
 }
 .project-description {

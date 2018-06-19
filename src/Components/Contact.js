@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Segment, Form, Grid, TextArea, Input, Button } from 'semantic-ui-react'
+import { Segment, Form, Grid, TextArea, Input, Button, Icon } from 'semantic-ui-react'
 import Toastr from 'toastr';
 
 function postEndpoint(url, data) {
@@ -18,34 +18,34 @@ function postEndpoint(url, data) {
   });
 }
 
-const SocialContact = ({ href, fontAwesome, name }) =>
-  <div className={`social-links ${fontAwesome}-color`}>
-    <a href={href} target="_blank">
-      <i className={`fa ${fontAwesome}`} aria-hidden="true"></i>
+const SocialContact = ({ href, icon, name }) =>
+  <div className={`social-links ${icon}-color`}>
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      <Icon name={icon} />
     </a>
   </div>
 
 const SocialContacts = () =>
-  <div className="col-md-6 col-xs-12 col-sm-12 social">
+  <div className="social">
     <SocialContact
       href={'https://www.linkedin.com/in/anselm-ezumezu-284a81b4'}
-      fontAwesome={'fa-linkedin-square'}
+      icon='linkedin'
     />
     <SocialContact
       href={'https://github.com/chukwumaijem'}
-      fontAwesome={'fa-github-square'}
+      icon='github'
     />
     <SocialContact
       href={'https://www.facebook.com/aezumezu'}
-      fontAwesome={'fa-facebook-square'}
+      icon='facebook'
     />
     <SocialContact
       href={'https://twitter.com/chuma_ezums'}
-      fontAwesome={'fa-twitter-square'}
+      icon='twitter'
     />
     <SocialContact
       href={'https://stackoverflow.com/users/6269670/anselm'}
-      fontAwesome={'fa-stack-overflow'}
+      icon='stack overflow'
     />
   </div>
 
