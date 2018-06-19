@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Segment } from 'semantic-ui-react'
+import { Segment, Form, Grid, TextArea, Input, Button } from 'semantic-ui-react'
 import Toastr from 'toastr';
 
 function postEndpoint(url, data) {
@@ -50,11 +50,16 @@ const SocialContacts = () =>
   </div>
 
 class Contact extends Component {
+  state = {
+    email: '',
+    subject: '',
+    message: '',
+    sending: false
+  };
   submitEmail = (e) => {
     e.preventDefault();
-    const subject = this.refs.subject.value;
-    const email = this.refs.email.value;
-    const message = this.refs.message.value;
+    const { email, subject, message } = this.state;
+
     if (!email) {
       return Toastr.error('Your email is required.')
     }
@@ -67,57 +72,61 @@ class Contact extends Component {
     this.sendEmail(email, subject, message)
   }
   sendEmail(email, subject, message) {
+    this.setState({ sending: true });
     const url = 'https://anselm-api.herokuapp.com/api/v1/emailClient/send'
     const data = { email, subject, message }
     postEndpoint(url, data)
       .then(data => {
         if (data.error) {
-          return Toastr.error(`Error: ${data.error}`);
+          return Toastr.error(data.error, 'Error', { closeButton: true });
         }
         Toastr.success('Message sent successfully!');
+        this.resetFields();
       })
       .catch((err) => {
-        return Toastr.error(`Error: ${err}`);
-      })
-
-    this.resetFields();
+        return Toastr.error(err, 'Error', { closeButton: true });
+      });
+    this.setState({ sending: false });
   }
 
   resetFields() {
-    this.refs.email.value = '';
-    this.refs.subject.value = '';
-    this.refs.message.value = '';
+    this.setState({ email: '', subject: '', message: '' });
+  }
+
+  handleChange = (e, data) => {
+    this.setState({ [data.id]: data.value });
   }
 
   render() {
+    const { email, subject, message, sending } = this.state;
     return (
       <Segment>
-        <div id="contact" className="col-md-12">
-          <h2 className="sub-header">Contact Me</h2>
-          <form className="col-md-6 form">
-            <div className="form-group">
-              <label htmlFor="usr">Your Email:</label>
-              <input ref="email" type="text" className="form-control" id="usr" />
-            </div>
-            <div className="form-group">
-              <label htmlFor="usr">Subject:</label>
-              <input ref="subject" type="text" className="form-control" id="usr" />
-            </div>
-            <div className="form-group">
-              <label htmlFor="usr">Message:</label>
-              <textarea ref="message" className="form-control" id="usr" rows="10"></textarea>
-            </div>
-            <div className="form-group">
-              <input
-                type="submit"
-                value="Send Mail"
-                className="btn btn-custom form-control submit"
-                onClick={this.submitEmail}
-              />
-            </div>
-          </form>
-          <SocialContacts />
-        </div>
+        <h2 className="sub-header">Contact Me</h2>
+        <Grid columns={2} divided>
+          <Grid.Row>
+            <Grid.Column width="8">
+              <Form className="col-md-6 form">
+                <Form.Field
+                  id="email" value={email}
+                  control={Input} label='Your Email'
+                  placeholder='Your Email' onChange={this.handleChange} />
+                <Form.Field
+                  id="subject" value={subject}
+                  control={Input} label='Subject'
+                  placeholder='Subject' onChange={this.handleChange} />
+                <Form.Field
+                  id="message" value={message}
+                  control={TextArea} label='Message' onChange={this.handleChange} />
+                <Button basic onClick={this.submitEmail} disabled={sending}>
+                  Send
+                </Button>
+              </Form>
+            </Grid.Column>
+            <Grid.Column width="8">
+              <SocialContacts />
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
       </Segment>
     )
   }
