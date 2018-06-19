@@ -73,7 +73,11 @@ class Contact extends Component {
   }
   sendEmail(email, subject, message) {
     this.setState({ sending: true });
-    const url = 'https://anselm-api.herokuapp.com/api/v1/emailClient/send'
+    const localhost = ['localhost', '127.0.0.1', '0.0.0.0'];
+    const urlHost = localhost.includes(window.location.host.split(':')[0]) ?
+      'https://anselm-api-staging' : 'https://anselm-api';
+
+    const url = `${urlHost}.herokuapp.com/api/v1/emailClient/send`;
     const data = { email, subject, message }
     postEndpoint(url, data)
       .then(data => {
