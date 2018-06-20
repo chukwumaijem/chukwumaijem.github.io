@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Container } from 'semantic-ui-react';
-import './styles/style.css';
+import { Container, Segment } from 'semantic-ui-react';
 
 import Header from './Components/Header';
 import Intro from './Components/Intro';
@@ -13,9 +12,11 @@ class App extends Component {
     return (
       <Container fluid>
         <Header />
-        <Intro />
-        <Projects />
-        <Contact />
+        <Segment.Group>
+          <Segment><Intro /></Segment>
+          <Segment textAlign="center" padded="very" tertiary><Projects /></Segment>
+          <Segment><Contact /></Segment>
+        </Segment.Group>
         <Footer />
       </Container>
     );

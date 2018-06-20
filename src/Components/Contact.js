@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Segment, Form, Grid, TextArea, Input, Button, Icon } from 'semantic-ui-react'
+import { Form, Grid, TextArea, Input, Button, Icon, Responsive } from 'semantic-ui-react'
 import Toastr from 'toastr';
 
 function postEndpoint(url, data) {
@@ -104,7 +104,7 @@ class Contact extends Component {
   render() {
     const { email, subject, message, sending } = this.state;
     return (
-      <Segment>
+      <div>
         <h2 className="sub-header">Contact Me</h2>
         <Grid columns={2} divided>
           <Grid.Row>
@@ -131,7 +131,7 @@ class Contact extends Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-      </Segment>
+      </div>
     )
   }
 }
