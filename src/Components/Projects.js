@@ -35,7 +35,7 @@ const Projects = () => {
     />
   );
   return (
-    <div id="projects">
+    <div>
       <h2>Projects</h2>
       <Responsive as={Card.Group} itemsPerRow={3} minWidth={650}>
         {projectList}

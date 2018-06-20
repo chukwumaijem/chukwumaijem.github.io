@@ -13,9 +13,9 @@ class App extends Component {
       <Container fluid>
         <Header />
         <Segment.Group>
-          <Segment><Intro /></Segment>
-          <Segment textAlign="center" padded="very" tertiary><Projects /></Segment>
-          <Segment><Contact /></Segment>
+          <Segment id="about"><Intro /></Segment>
+          <Segment id="projects" textAlign="center" padded="very" tertiary><Projects /></Segment>
+          <Segment id="contact"><Contact /></Segment>
         </Segment.Group>
         <Footer />
       </Container>

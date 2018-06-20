@@ -3,7 +3,7 @@ import { Container } from 'semantic-ui-react'
 
 const Intro = () =>
   <Container fluid>
-    <div id="about" className="intro-image">
+    <div className="intro-image">
       <div className="intro-dim">
         <div className="dev-name">Chukwuma Ezumezu</div>
         <p className="dev-detail">
