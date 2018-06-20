@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Grid, TextArea, Input, Button, Icon, Responsive } from 'semantic-ui-react'
+import { Form, Grid, TextArea, Input, Button, Icon } from 'semantic-ui-react'
 import Toastr from 'toastr';
 
 function postEndpoint(url, data) {
