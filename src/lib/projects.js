@@ -11,7 +11,8 @@ export const projects = [
     description: 'A Github client that generates reports using the description of closed PR\'s on a repo.',
     image: koshin,
     link: 'https://koshin.herokuapp.com/',
-    github: 'https://github.com/andela-morekoya/koshin'
+    github: 'https://github.com/andela-morekoya/koshin',
+    tech: ['Node/Express', 'React/Redux', 'Github API', 'SendGrid API'],
   },
   {
     title: 'Ludo Game',
@@ -19,6 +20,7 @@ export const projects = [
     image: ludo,
     link: '',
     github: 'https://github.com/chukwumaijem/ludo-game',
+    tech: ['React/Redux'],
   },
   {
     title: 'SyncStore',
@@ -26,6 +28,7 @@ export const projects = [
     image: syncStore,
     link: 'https://sync-store.herokuapp.com/',
     github: 'https://github.com/chukwumaijem/book-store',
+    tech: ['React/Redux'],
   },
   {
     title: 'Service API',
@@ -33,6 +36,7 @@ export const projects = [
     image: serviceApi,
     link: 'https://anselm-api.herokuapp.com/',
     github: 'https://github.com/chukwumaijem/service-api',
+    tech: ['Node/Express', 'SendGrid API'],
   },
   {
     title: 'Timer',
@@ -40,13 +44,15 @@ export const projects = [
     image: timer,
     link: 'https://timemaster-staging.herokuapp.com/',
     github: 'https://github.com/chukwumaijem/timemaster',
+    tech: ['React/Redux'],
   },
   {
     title: 'Weather App',
     description: 'A Preact weather app. Display the weather of a city selected from the drop down menu.',
     image: weatherApp,
     link: 'https://infinite-stream-45190.herokuapp.com/',
-    github: 'https://github.com/chukwumaijem/weather-app-london'
+    github: 'https://github.com/chukwumaijem/weather-app-london',
+    tech: ['Preact', 'Wunderground API'],
   },
 
 ];
@@ -55,6 +61,7 @@ export const libraries = [
   {
     title: 'Roll a Die',
     description: 'A 3D aminated die rolling library',
-    github: 'https://github.com/chukwumaijem/roll-a-die'
+    github: 'https://github.com/chukwumaijem/roll-a-die',
+    tech: ['Vanilla Javascript'],
   },
 ];
