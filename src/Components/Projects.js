@@ -1,9 +1,9 @@
 import React from 'react';
-import { Card, Icon, Image, Responsive } from 'semantic-ui-react'
+import { Card, Icon, Image, Responsive, List } from 'semantic-ui-react'
 
 import { projects } from '../lib/projects';
 
-const Project = ({ project: { title, image, description, link, github } }) => {
+const Project = ({ project: { title, image, description, link, github, tech } }) => {
   return (
     <Card color='brown'>
       <Image src={image} />
@@ -22,6 +22,17 @@ const Project = ({ project: { title, image, description, link, github } }) => {
             <Icon size="big" name="github" />
           </a>
         }
+      </Card.Content>
+      <Card.Content>
+        <List horizontal>
+          {tech.map((item, i) => {
+            return (<List.Item as='li' key={`${item}-${i}`}>
+              <List.Content>
+                {item}
+              </List.Content>
+            </List.Item>);
+          })}
+        </List>
       </Card.Content>
     </Card>
   );

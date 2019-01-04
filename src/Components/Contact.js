@@ -25,28 +25,22 @@ const SocialContact = ({ href, icon, name }) =>
     </a>
   </div>
 
+const socialitems = [
+  { link: 'https://www.linkedin.com/in/anselm-ezumezu-284a81b4', icon: 'linkedin' },
+  { link: 'https://github.com/chukwumaijem', icon: 'github' },
+  { link: 'https://www.facebook.com/aezumezu', icon: 'facebook' },
+  // { link: 'https://twitter.com/chuma_ezums', icon: 'twitter' },
+  // { link: 'https://stackoverflow.com/users/6269670/anselm', icon: 'stack overflow' },
+];
+
 const SocialContacts = () =>
   <div className="social">
-    <SocialContact
-      href={'https://www.linkedin.com/in/anselm-ezumezu-284a81b4'}
-      icon='linkedin'
-    />
-    <SocialContact
-      href={'https://github.com/chukwumaijem'}
-      icon='github'
-    />
-    <SocialContact
-      href={'https://www.facebook.com/aezumezu'}
-      icon='facebook'
-    />
-    <SocialContact
-      href={'https://twitter.com/chuma_ezums'}
-      icon='twitter'
-    />
-    <SocialContact
-      href={'https://stackoverflow.com/users/6269670/anselm'}
-      icon='stack overflow'
-    />
+    {
+      socialitems.map((item) => <SocialContact
+        href={item.link}
+        icon={item.icon}
+      />)
+    }
   </div>
 
 class Contact extends Component {
