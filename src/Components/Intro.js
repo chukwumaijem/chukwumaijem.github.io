@@ -7,7 +7,8 @@ const Intro = () =>
       <div className="intro-dim">
         <div className="dev-name">Chukwuma Ezumezu</div>
         <p className="dev-detail">
-          I'm a fullStack JavaScript developer with more than two years professional experience. I work mostly with the PREN stack (Postgres, React, Express, Node).
+          I'm a fullStack JavaScript developer with three years professional development experience.
+          I work mostly with the (P/M)ERN stack (PostgreSQL/MongoDB, React, Express, Node).
         </p>
       </div>
     </div>

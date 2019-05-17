@@ -16,9 +16,9 @@ export const projects = [
   },
   {
     title: 'Ludo Game',
-    description: 'A multi player online ludo game.',
+    description: 'A multi player ludo game.',
     image: ludo,
-    link: '',
+    link: 'https://dazeludo.netlify.com/',
     github: 'https://github.com/chukwumaijem/ludo-game',
     tech: ['React/Redux'],
   },

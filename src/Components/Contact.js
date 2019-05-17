@@ -36,10 +36,13 @@ const socialitems = [
 const SocialContacts = () =>
   <div className="social">
     {
-      socialitems.map((item) => <SocialContact
-        href={item.link}
-        icon={item.icon}
-      />)
+      socialitems.map((item, index) =>
+        <SocialContact
+          key={index}
+          href={item.link}
+          icon={item.icon}
+        />
+      )
     }
   </div>
 
