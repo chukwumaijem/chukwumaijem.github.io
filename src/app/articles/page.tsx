@@ -1,15 +1,13 @@
-import { Card } from '~/components/Card'
-import { SimpleLayout } from '~/components/SimpleLayout'
-import { type ArticleWithSlug, getAllArticles } from '~/lib/articles'
-import { formatDate } from '~/lib/formatDate'
+import { Card } from '~/components/Card';
+import { SimpleLayout } from '~/components/SimpleLayout';
+import { type ArticleWithSlug, getAllArticles } from '~/lib/articles';
+import { formatDate } from '~/lib/formatDate';
 
 function Article({ article }: { article: ArticleWithSlug }) {
   return (
     <article className="md:grid md:grid-cols-4 md:items-baseline">
       <Card className="md:col-span-3">
-        <Card.Title href={`/articles/${article.slug}`}>
-          {article.title}
-        </Card.Title>
+        <Card.Title href={article.slug}>{article.title}</Card.Title>
         <Card.Eyebrow
           as="time"
           dateTime={article.date}
@@ -29,11 +27,11 @@ function Article({ article }: { article: ArticleWithSlug }) {
         {formatDate(article.date)}
       </Card.Eyebrow>
     </article>
-  )
+  );
 }
 
 export default async function ArticlesIndex() {
-  let articles = await getAllArticles()
+  let articles = await getAllArticles();
 
   return (
     <SimpleLayout
@@ -48,5 +46,5 @@ export default async function ArticlesIndex() {
         </div>
       </div>
     </SimpleLayout>
-  )
+  );
 }

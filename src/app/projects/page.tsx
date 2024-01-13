@@ -26,7 +26,7 @@ const projects = [
   {
     name: 'Roll A Die',
     description:
-      'A die rolling library for the web, written in TypeScript and React. Made to be used in the Ludo game.',
+      'A die rolling library for the web, written in JavaScript. Made to be used in the Ludo game.',
     link: {
       href: 'https://github.com/chukwumaijem/roll-a-die',
       label: 'github.com',
@@ -36,7 +36,7 @@ const projects = [
   {
     name: 'Ludo Game',
     description:
-      'A multi-player board game developed using React. Had the intention of expanding it to use socket.io, but never got around to that.',
+      'A multi-player board game developed using React and Electron. Can be easily extended with socket.io for real-time multiplayer.',
     link: {
       href: 'https://github.com/chukwumaijem/ludo-game',
       label: 'github.com',

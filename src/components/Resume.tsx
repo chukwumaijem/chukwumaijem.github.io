@@ -16,13 +16,13 @@ async function downloadFromLink(url: string) {
   saveAs(blob, fileName);
 }
 
-interface Role {
+type Role = {
   company: string;
   title: string;
   logo: ImageProps['src'];
   start: string | { label: string; dateTime: string };
   end: string | { label: string; dateTime: string };
-}
+};
 function Role({ role }: { role: Role }) {
   let startLabel =
     typeof role.start === 'string' ? role.start : role.start.label;

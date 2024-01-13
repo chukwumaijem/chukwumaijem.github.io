@@ -3,7 +3,7 @@ import { Container } from '~/components/Container';
 import { Resume } from '~/components/Resume';
 import { SocialLink } from '~/components/SocialLink';
 
-import { type ArticleWithSlug, getAllArticles } from '~/lib/articles';
+import { type ArticleWithSlug, getFeaturedArticles } from '~/lib/articles';
 import { formatDate } from '~/lib/formatDate';
 
 function Article({ article }: { article: ArticleWithSlug }) {
@@ -20,7 +20,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
 }
 
 export default async function Home() {
-  let articles = (await getAllArticles()).slice(0, 4);
+  let articles = (await getFeaturedArticles()).slice(0, 3);
 
   return (
     <>
