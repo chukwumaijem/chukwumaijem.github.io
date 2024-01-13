@@ -10,7 +10,7 @@ const projects = [
   {
     name: 'File Tools',
     description:
-      'I lead the development of this project. It is simply a collection of tools for manipulating files.',
+      'Led the development of this project, which is simply a collection of tools for manipulating files. Including PDFs and Images.',
     link: { href: 'https://thefiletools.com', label: 'thefiletools.com' },
     logo: logoFileTools,
   },
