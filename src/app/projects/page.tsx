@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { Card } from '~/components/Card';
 import { SimpleLayout } from '~/components/SimpleLayout';
 import logoPlaceholder from '~/images/logos/projects/placeholder.png';
-import logoLudo from '~/images/logos/projects/ludo.png';
-import logoFileTools from '~/images/logos/projects/fileTools.png';
+import logoLudo from '~/images/logos/projects/ludo.jpeg';
+import logoFileTools from '~/images/logos/projects/fileTools.jpeg';
 
 const projects = [
   {

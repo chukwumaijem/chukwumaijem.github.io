@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import { Container } from '~/components/Container';
 import { SocialLinkWithName } from '~/components/SocialLink';
-import portraitImage from '~/images/portrait.png';
+import portraitImage from '~/images/portrait.jpeg';
 
 export default function About() {
   return (
