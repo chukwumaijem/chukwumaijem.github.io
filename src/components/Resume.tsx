@@ -66,7 +66,7 @@ export function Resume() {
       company: 'Shift Health',
       title: 'Snr. Software Engineer',
       logo: logoShiftHealth,
-      start: 'Jul. 2019',
+      start: 'Jul. 2020',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
