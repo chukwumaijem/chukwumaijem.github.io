@@ -25,7 +25,7 @@ let articles: ArticleWithSlug[] = [
       "In the dynamic world of digital content creation, the ability to edit and enhance images is a skill that transcends various fields. Whether you're a graphic designer, a marketer, or an enthusiast capturing precious moments, the quality of your visuals plays a pivotal role.",
     date: '2023-11-20',
     slug: 'https://www.thefiletools.com/blog/image-background-removal-2023-11-20',
-    featured: true,
+    featured: false,
   },
   {
     title: 'Document Fusion with Our Online PDF Merging Tool',
@@ -33,6 +33,14 @@ let articles: ArticleWithSlug[] = [
       "Simplicity is essential in the world of digital documents. Our online PDF merging tool is your simple solution designed for people who aren't tech-savvy but want a straightforward way to combine and organize their PDF files.",
     date: '2024-01-01',
     slug: 'https://www.thefiletools.com/blog/merge-multiple-pdf-files-2024-01-01',
+    featured: true,
+  },
+  {
+    title: 'Sharp vs Imagemin for Image Minification in Node.js',
+    description:
+      "Image optimization is crucial in web development for improving website performance. Two popular Node.js packages for image compression are Sharp and Imagemin. In this post, we will compare these two libraries in terms of image size reduction and processing speed.",
+    date: '2024-09-22',
+    slug: 'https://blog.blockqueue.io/sharp-vs-imagemin-comparison-20240922',
     featured: true,
   },
 ];
