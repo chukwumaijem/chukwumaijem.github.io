@@ -11,11 +11,19 @@ export type ArticleWithSlug = {
  */
 let articles: ArticleWithSlug[] = [
   {
+    title: 'Automating Local Environment Setup with Vagrant and Ansible',
+    description:
+      'Infrastructure as code, or IaC, is a set of practices that allows developers to automate the creation, configuration, and management of infrastructure. In this article, we will explore how to use Vagrant and Ansible to create a local development environment.',
+    date: '2025-01-05',
+    slug: 'https://blockqueue.io/blog/2025-01-05-iac-with-vagrant-and-ansible',
+    featured: true,
+  },
+  {
     title: 'Techniques for Compressing PDF Files',
     description:
       'Have you ever been tasked with reducing the size of a PDF file. Or tried uploading a PDF file to a website that has size limitation? Here I will be showing you two ways to reduce the size of PDF file using Nodejs.',
     date: '2023-03-05',
-    slug: 'https://blog.blockqueue.io/pdf-compression-techniques-20230305',
+    slug: 'https://blockqueue.io/blog/2023-03-05-pdf-compression-techniques',
     featured: true,
   },
   {
@@ -33,12 +41,12 @@ let articles: ArticleWithSlug[] = [
       "Simplicity is essential in the world of digital documents. Our online PDF merging tool is your simple solution designed for people who aren't tech-savvy but want a straightforward way to combine and organize their PDF files.",
     date: '2024-01-01',
     slug: 'https://www.thefiletools.com/blog/merge-multiple-pdf-files-2024-01-01',
-    featured: true,
+    featured: false,
   },
   {
     title: 'Sharp vs Imagemin for Image Minification in Node.js',
     description:
-      "Image optimization is crucial in web development for improving website performance. Two popular Node.js packages for image compression are Sharp and Imagemin. In this post, we will compare these two libraries in terms of image size reduction and processing speed.",
+      'Image optimization is crucial in web development for improving website performance. Two popular Node.js packages for image compression are Sharp and Imagemin. In this post, we will compare these two libraries in terms of image size reduction and processing speed.',
     date: '2024-09-22',
     slug: 'https://blog.blockqueue.io/sharp-vs-imagemin-comparison-20240922',
     featured: true,
