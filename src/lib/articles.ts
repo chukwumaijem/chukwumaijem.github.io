@@ -48,7 +48,7 @@ let articles: ArticleWithSlug[] = [
     description:
       'Image optimization is crucial in web development for improving website performance. Two popular Node.js packages for image compression are Sharp and Imagemin. In this post, we will compare these two libraries in terms of image size reduction and processing speed.',
     date: '2024-09-22',
-    slug: 'https://blog.blockqueue.io/sharp-vs-imagemin-comparison-20240922',
+    slug: 'https://blockqueue.io/blog/2024-09-22-sharp-vs-imagemin-comparison',
     featured: true,
   },
 ];
