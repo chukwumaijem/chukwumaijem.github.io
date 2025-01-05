@@ -30,7 +30,7 @@ export default async function Home() {
             Software engineer & DevOps enthusiast
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&apos;m Chukwuma, a software designer and entrepreneur based in
+            I&apos;m Chukwuma, a software engineer and DevOps enthusiast from
             Nigeria. Committed to continuous learning and a passion for crafting
             innovative and user-centric solutions.
           </p>
