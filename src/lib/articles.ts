@@ -11,7 +11,23 @@ export type ArticleWithSlug = {
  */
 let articles: ArticleWithSlug[] = [
   {
-    title: 'Automating Local Environment Setup with Vagrant and Ansible',
+    title: 'Part 2: Infrastructure as Code with Vagrant and Ansible',
+    description:
+      'Infrastructure as code, or IaC, is a set of practices that allows developers to automate the creation, configuration, and management of infrastructure. In this article, we will host a static website on a Vagrant VM using Ansible.',
+    date: '2025-01-21',
+    slug: 'https://blockqueue.io/blog/2025-01-21-iac-with-vagrant-and-ansible-part-2',
+    featured: false,
+  },
+  {
+    title: 'Setting Up Bitcoin Core, Fulcrum, and Electrum in Regtest',
+    description:
+      'A step-by-step guide on how to set up Bitcoin Core, Fulcrum, and Electrum in regtest mode for local development and testing.',
+    date: '2025-01-20',
+    slug: 'https://blockqueue.io/blog/2025-01-20-setup-bitcoin-core-with-fulcrum-server',
+    featured: true,
+  },
+  {
+    title: 'Part 1: Infrastructure as Code with Vagrant and Ansible',
     description:
       'Infrastructure as code, or IaC, is a set of practices that allows developers to automate the creation, configuration, and management of infrastructure. In this article, we will explore how to use Vagrant and Ansible to create a local development environment.',
     date: '2025-01-05',
@@ -24,7 +40,7 @@ let articles: ArticleWithSlug[] = [
       'Have you ever been tasked with reducing the size of a PDF file. Or tried uploading a PDF file to a website that has size limitation? Here I will be showing you two ways to reduce the size of PDF file using Nodejs.',
     date: '2023-03-05',
     slug: 'https://blockqueue.io/blog/2023-03-05-pdf-compression-techniques',
-    featured: true,
+    featured: false,
   },
   {
     title:
