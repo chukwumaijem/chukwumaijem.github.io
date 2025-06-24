@@ -60,7 +60,7 @@ export default function Projects() {
             <div className="h-18 w-18 relative z-10 flex items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image
                 src={project.logo}
-                alt=""
+                alt={project.name}
                 className="h-16 w-16 rounded-full"
                 unoptimized
               />
