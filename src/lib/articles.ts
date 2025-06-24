@@ -11,6 +11,15 @@ export type ArticleWithSlug = {
  */
 let articles: ArticleWithSlug[] = [
   {
+    title:
+      'What I Learned Researching Docker Storage (and Why My Disk Hates Me)',
+    description:
+      'A deep dive into Docker storage, OverlayFS, and why you should never forget to use volumes for your stateful containers. Learn how to reclaim your disk space and your sanity.',
+    date: '2025-06-25',
+    slug: 'https://blockqueue.io/blog/2025-06-25-docker-volume-management',
+    featured: true,
+  },
+  {
     title: 'Part 2: Infrastructure as Code with Vagrant and Ansible',
     description:
       'Infrastructure as code, or IaC, is a set of practices that allows developers to automate the creation, configuration, and management of infrastructure. In this article, we will host a static website on a Vagrant VM using Ansible.',
