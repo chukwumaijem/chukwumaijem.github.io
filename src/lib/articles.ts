@@ -12,6 +12,15 @@ export type ArticleWithSlug = {
 let articles: ArticleWithSlug[] = [
   {
     title:
+      'Free, Stable, and Custom: How to Use Cloudflare Tunnel with Your Own Domain (Better Than ngrok)',
+    description:
+      'Learn how to set up Cloudflare Tunnel with your custom domain for free, stable URLs that are perfect for development, testing, and production use. A complete guide with working examples.',
+    date: '2025-08-13',
+    slug: 'https://blockqueue.io/blog/2025-08-13-cloudflared-an-nginx-alternative',
+    featured: false,
+  },
+  {
+    title:
       'What I Learned Researching Docker Storage (and Why My Disk Hates Me)',
     description:
       'A deep dive into Docker storage, OverlayFS, and why you should never forget to use volumes for your stateful containers. Learn how to reclaim your disk space and your sanity.',
@@ -49,23 +58,6 @@ let articles: ArticleWithSlug[] = [
       'Have you ever been tasked with reducing the size of a PDF file. Or tried uploading a PDF file to a website that has size limitation? Here I will be showing you two ways to reduce the size of PDF file using Nodejs.',
     date: '2023-03-05',
     slug: 'https://blockqueue.io/blog/2023-03-05-pdf-compression-techniques',
-    featured: false,
-  },
-  {
-    title:
-      "Unleashing the Power of Precision: A Guide to Using FileTools' Remove Image Background Tool",
-    description:
-      "In the dynamic world of digital content creation, the ability to edit and enhance images is a skill that transcends various fields. Whether you're a graphic designer, a marketer, or an enthusiast capturing precious moments, the quality of your visuals plays a pivotal role.",
-    date: '2023-11-20',
-    slug: 'https://www.thefiletools.com/blog/image-background-removal-2023-11-20',
-    featured: false,
-  },
-  {
-    title: 'Document Fusion with Our Online PDF Merging Tool',
-    description:
-      "Simplicity is essential in the world of digital documents. Our online PDF merging tool is your simple solution designed for people who aren't tech-savvy but want a straightforward way to combine and organize their PDF files.",
-    date: '2024-01-01',
-    slug: 'https://www.thefiletools.com/blog/merge-multiple-pdf-files-2024-01-01',
     featured: false,
   },
   {
