@@ -12,12 +12,20 @@ export type ArticleWithSlug = {
 let articles: ArticleWithSlug[] = [
   {
     title:
+      "The Beginner's Guide to CIDR: Why /24 Isn't Magic",
+    description: 'Learn how CIDR notation actually works, with simple examples and a practical Docker network layout you can use today.',
+    date: '2026-01-30',
+    slug: 'https://blockqueue.io/blog/2026-01-30-beginners-guide-to-cidr',
+    featured: true,
+  },
+  {
+    title:
       'Free, Stable, and Custom: How to Use Cloudflare Tunnel with Your Own Domain (Better Than ngrok)',
     description:
       'Learn how to set up Cloudflare Tunnel with your custom domain for free, stable URLs that are perfect for development, testing, and production use. A complete guide with working examples.',
     date: '2025-08-13',
     slug: 'https://blockqueue.io/blog/2025-08-13-cloudflared-an-nginx-alternative',
-    featured: false,
+    featured: true,
   },
   {
     title:
@@ -42,7 +50,7 @@ let articles: ArticleWithSlug[] = [
       'A step-by-step guide on how to set up Bitcoin Core, Fulcrum, and Electrum in regtest mode for local development and testing.',
     date: '2025-01-20',
     slug: 'https://blockqueue.io/blog/2025-01-20-setup-bitcoin-core-with-fulcrum-server',
-    featured: true,
+    featured: false,
   },
   {
     title: 'Part 1: Infrastructure as Code with Vagrant and Ansible',

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: {
     template: '%s - Chukwuma Zikora',
     default:
-      'Chukwuma Zikora - Software engineer, devOps enthusiast, and aspiring founder.',
+      'Chukwuma Zikora - Software engineer, DevOps Practitioner, and aspiring founder.',
   },
   description: `I'm Chukwuma, a software designer and entrepreneur based in Nigeria. Committed to continuous learning and a passion for crafting innovative and user-centric solutions.`,
 };
