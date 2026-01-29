@@ -12,20 +12,20 @@
     "@headlessui/react": "^1.7.18",
     "clsx": "^2.1.0",
     "file-saver": "^2.0.5",
-    "next": "15.4.6",
+    "next": "16.1.6",
     "next-themes": "^0.2.1",
-    "react": "19.1.1",
-    "react-dom": "19.1.1"
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.11",
     "@tailwindcss/typography": "^0.5.10",
     "@types/file-saver": "^2.0.7",
     "@types/node": "^20",
-    "@types/react": "19.1.10",
-    "@types/react-dom": "19.1.7",
-    "eslint": "^8",
-    "eslint-config-next": "15.4.6",
+    "@types/react": "19.2.10",
+    "@types/react-dom": "19.2.3",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "16.0.1",
     "postcss": "^8",
     "prettier": "^3.2.1",
     "prettier-plugin-tailwindcss": "^0.6.14",
@@ -34,7 +34,7 @@
     "typescript": "^5"
   },
   "overrides": {
-    "@types/react": "19.1.10",
-    "@types/react-dom": "19.1.7"
+    "@types/react": "19.2.10",
+    "@types/react-dom": "19.2.3"
   }
 }
