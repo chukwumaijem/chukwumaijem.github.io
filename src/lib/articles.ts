@@ -12,7 +12,7 @@ export type ArticleWithSlug = {
 let articles: ArticleWithSlug[] = [
   {
     title:
-      "The Beginner's Guide to CIDR: Why /24 Isn't Magic",
+      "The Beginner's Guide to CIDR",
     description: 'Learn how CIDR notation actually works, with simple examples and a practical Docker network layout you can use today.',
     date: '2026-01-30',
     slug: 'https://blockqueue.io/blog/2026-01-30-beginners-guide-to-cidr',
