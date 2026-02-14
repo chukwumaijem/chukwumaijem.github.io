@@ -9,11 +9,19 @@ export type ArticleWithSlug = {
 /**
  * Keep the number of features posts to 3.
  */
-let articles: ArticleWithSlug[] = [
+const articles: ArticleWithSlug[] = [
   {
-    title:
-      "The Beginner's Guide to CIDR",
-    description: 'Learn how CIDR notation actually works, with simple examples and a practical Docker network layout you can use today.',
+    title: 'Implementing Network Egress Control in Docker Swarm',
+    description:
+      'Learn how to lock container internet access and route outbound traffic through a controlled forward proxy. Stop compromised containers from reaching the internet.',
+    date: '2026-02-15',
+    slug: 'https://blockqueue.io/blog/2026-02-15-docker-swarm-network-egress-guide',
+    featured: false,
+  },
+  {
+    title: "The Beginner's Guide to CIDR",
+    description:
+      'Learn how CIDR notation actually works, with simple examples and a practical Docker network layout you can use today.',
     date: '2026-01-30',
     slug: 'https://blockqueue.io/blog/2026-01-30-beginners-guide-to-cidr',
     featured: true,
@@ -34,7 +42,7 @@ let articles: ArticleWithSlug[] = [
       'A deep dive into Docker storage, OverlayFS, and why you should never forget to use volumes for your stateful containers. Learn how to reclaim your disk space and your sanity.',
     date: '2025-06-25',
     slug: 'https://blockqueue.io/blog/2025-06-25-docker-volume-management',
-    featured: true,
+    featured: false,
   },
   {
     title: 'Part 2: Infrastructure as Code with Vagrant and Ansible',
@@ -58,7 +66,7 @@ let articles: ArticleWithSlug[] = [
       'Infrastructure as code, or IaC, is a set of practices that allows developers to automate the creation, configuration, and management of infrastructure. In this article, we will explore how to use Vagrant and Ansible to create a local development environment.',
     date: '2025-01-05',
     slug: 'https://blockqueue.io/blog/2025-01-05-iac-with-vagrant-and-ansible',
-    featured: true,
+    featured: false,
   },
   {
     title: 'Techniques for Compressing PDF Files',
