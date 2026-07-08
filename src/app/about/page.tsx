@@ -20,43 +20,42 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100">
-            I&apos;m Chukwuma Zikora. I build thing from Nigeria where I live.
+            I&apos;m Chukwuma Zikora.
+          </h1>
+          <h1 className="pt-2 text-lg font-medium tracking-tight text-zinc-800 sm:text-xl dark:text-zinc-100">
+            I build software - and the systems that keep it running.
           </h1>
 
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              Welcome to my personal corner of the internet! My journey as a
-              software developer began by crafting board games. This initial
-              fascination has evolved into a dynamic career where I&apos;ve
-              immersed myself in diverse industries, wielding a versatile set of
-              technologies such as React, Vue, Angular, Nest, Express, and more.
-              My experience extends across a spectrum of projects, each
-              contributing to my growth as a developer. From front-end
-              frameworks to robust back-end architectures, I&apos;ve embraced
-              the challenges and triumphs that come with creating innovative and
-              efficient solutions.
+              I&apos;m a senior software engineer based in Nigeria with over a
+              decade of experience shipping full-stack products. Along the way
+              I&apos;ve taken on the work that sits around the application
+              layer: CI/CD pipelines, cloud deployment, containerised services,
+              and the automation that keeps releases reliable.
             </p>
             <p>
-              Beyond the world of coding, you&apos;ll find me indulging in my
-              favorite pastimes. As an avid gamer, I relish the immersive
-              experiences offered by video games. Whether navigating virtual
-              realms or competing in digital arenas, I find joy in the
-              creativity and skill involved. Additionally, I have a deep
-              appreciation for literature, and you might catch me engrossed in a
-              captivating novel during my downtime. These hobbies not only
-              provide a well-deserved break but also fuel my creativity,
-              offering a well-rounded perspective that I bring to my software
-              development endeavors.
+              At ShiftHealth, I design and maintain the deployment
+              infrastructure for a healthcare automation platform - GitHub
+              Actions, Docker, and AWS Serverless. That same ownership shows up
+              in other products I&apos;ve shipped: as founder of BlockQueue
+              Systems I&apos;ve shipped Property Governors and FirmLyt
+              end-to-end, from application architecture through cloud
+              infrastructure and production pipelines.
             </p>
             <p>
-              This website serves as a glimpse into my professional journey,
-              projects, and the blend of technology and creativity that defines
-              my approach to software development. Whether you&apos;re here to
-              explore my portfolio, learn about my coding adventures, or simply
-              share a mutual interest, I&apos;m excited to connect and showcase
-              the exciting intersections of technology, gaming, and literature
-              that shape my world. Thank you for visiting, and feel free to
-              reach out!
+              I also publish self-hostable infrastructure tooling under the
+              BlockQueue organisation on GitHub - email orchestration, job
+              queues, and webhook delivery - built to the same standards I use
+              in commercial systems. Day to day I work across TypeScript,
+              Node.js, React/Next.js, NestJS, PostgreSQL, Docker, Kubernetes,
+              and CI systems like GitHub Actions and GitLab CI. I&apos;m
+              currently studying for the CKAD to deepen my Kubernetes practice.
+            </p>
+            <p>
+              Outside of engineering I game and read, which keeps me curious
+              when the terminal gets quiet. Thanks for stopping by - feel free
+              to reach out if you want to collaborate or just talk shop.
             </p>
           </div>
         </div>

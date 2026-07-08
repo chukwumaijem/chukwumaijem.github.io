@@ -5,10 +5,11 @@ import { saveAs } from 'file-saver';
 
 import { Button } from '~/components/Button';
 import { BriefcaseIcon, ArrowDownIcon } from '~/components/Icons';
-import logoAndela from '~/images/logos/workplace/andela.png';
+import logoBlockQueue from '~/images/logos/workplace/blockqueue.png';
 import logoShiftHealth from '~/images/logos/workplace/shifthealth.png';
 import logoUnbird from '~/images/logos/workplace/unbird.jpg';
 import logoKwhen from '~/images/logos/workplace/kwhen.jpg';
+import logoAndela from '~/images/logos/workplace/andela.png';
 
 async function downloadFromLink(url: string) {
   const fileName = url.split('/').pop();
@@ -34,8 +35,13 @@ function Role({ role }: { role: Role }) {
 
   return (
     <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image src={role.logo} alt={role.company} className="h-7 w-7" unoptimized />
+      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+        <Image
+          src={role.logo}
+          alt={role.company}
+          className="h-7 w-7 rounded-full"
+          unoptimized
+        />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
@@ -52,7 +58,7 @@ function Role({ role }: { role: Role }) {
           aria-label={`${startLabel} until ${endLabel}`}
         >
           <time dateTime={startDate}>{startLabel}</time>{' '}
-          <span aria-hidden="true">—</span>{' '}
+          <span aria-hidden="true">-</span>{' '}
           <time dateTime={endDate}>{endLabel}</time>
         </dd>
       </dl>
@@ -63,8 +69,18 @@ function Role({ role }: { role: Role }) {
 export function Resume() {
   const resume: Array<Role> = [
     {
-      company: 'Shift Health',
-      title: 'Snr. Software Engineer',
+      company: 'BlockQueue Systems',
+      title: 'Founder & Lead Engineer',
+      logo: logoBlockQueue,
+      start: '2024',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear().toString(),
+      },
+    },
+    {
+      company: 'ShiftHealth',
+      title: 'Senior Software Engineer',
       logo: logoShiftHealth,
       start: 'Jul. 2020',
       end: {
@@ -81,7 +97,7 @@ export function Resume() {
     },
     {
       company: 'Kwhen',
-      title: 'JavaScript Freelancer',
+      title: 'Freelance JavaScript Developer',
       logo: logoKwhen,
       start: 'Sep. 2017',
       end: 'Jun. 2019',
@@ -96,7 +112,7 @@ export function Resume() {
   ];
 
   const handleDownload = async () => {
-    await downloadFromLink(`/Resume_Chukwuma-Zikora.pdf`);
+    await downloadFromLink(`/Resume_Chukwuma_Zikora.pdf`);
   };
 
   return (
