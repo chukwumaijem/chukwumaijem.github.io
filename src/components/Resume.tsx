@@ -70,7 +70,7 @@ export function Resume() {
   const resume: Array<Role> = [
     {
       company: 'BlockQueue Systems',
-      title: 'Founder & Lead Engineer',
+      title: 'Founder · Lead Engineer (Product + Infrastructure)',
       logo: logoBlockQueue,
       start: '2024',
       end: {

@@ -1,8 +1,15 @@
+import { type Metadata } from 'next';
 import Image from 'next/image';
 
 import { Container } from '~/components/Container';
 import { SocialLinkWithName } from '~/components/SocialLink';
 import portraitImage from '~/images/portrait.jpeg';
+
+export const metadata: Metadata = {
+  title: 'About',
+  description:
+    'DevOps / Platform Engineer focused on CI/CD, containers, Kubernetes, observability, and infrastructure automation.',
+};
 
 export default function About() {
   return (
@@ -23,34 +30,47 @@ export default function About() {
             I&apos;m Chukwuma Zikora.
           </h1>
           <h1 className="pt-2 text-lg font-medium tracking-tight text-zinc-800 sm:text-xl dark:text-zinc-100">
-            I build software - and the systems that keep it running.
+            DevOps / Platform Engineer. I build the systems that keep software
+            running.
           </h1>
 
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I&apos;m a senior software engineer based in Nigeria with over a
-              decade of experience shipping full-stack products. Along the way
-              I&apos;ve taken on the work that sits around the application
-              layer: CI/CD pipelines, cloud deployment, containerised services,
-              and the automation that keeps releases reliable.
+              After 10+ years as a software engineer (healthcare SaaS and
+              product work), I deliberately shifted into DevOps and Platform
+              Engineering. Today I care about one question: can we deploy
+              safely, observe clearly, and recover fast?
             </p>
             <p>
-              At ShiftHealth, I design and maintain the deployment
-              infrastructure for a healthcare automation platform - GitHub
-              Actions, Docker, and AWS Serverless. That same ownership shows up
-              in other products I&apos;ve shipped: as founder of BlockQueue
-              Systems I&apos;ve shipped Property Governors and FirmLyt
-              end-to-end, from application architecture through cloud
-              infrastructure and production pipelines.
+              At ShiftHealth I design and maintain CI/CD with GitHub Actions and
+              Docker across a multi-environment healthcare platform, and have
+              migrated workloads toward AWS serverless where it fits. That same
+              ownership shows up in products I&apos;ve shipped as founder of
+              BlockQueue Systems: Property Governors and FirmLyt, from
+              application architecture through cloud infrastructure and
+              production pipelines.
             </p>
             <p>
-              I also publish self-hostable infrastructure tooling under the
-              BlockQueue organisation on GitHub - email orchestration, job
-              queues, and webhook delivery - built to the same standards I use
-              in commercial systems. Day to day I work across TypeScript,
-              Node.js, React/Next.js, NestJS, PostgreSQL, Docker, Kubernetes,
-              and CI systems like GitHub Actions and GitLab CI. I&apos;m
-              currently studying for the CKAD to deepen my Kubernetes practice.
+              In my homelab I run a Proxmox-backed Swarm platform with automatic
+              HTTPS routing (Caddy Docker Proxy), a dedicated monitoring stack
+              (Prometheus, Grafana, Loki, Alertmanager), and a deny-by-default
+              container egress gateway (Ansible + Squid + iptables). I also
+              package multi-service apps with Helm on Minikube and MicroK8s.
+              Those labs live at{' '}
+              <a
+                href="https://github.com/chukwumaijem/playground-devops"
+                className="font-medium text-teal-500 hover:text-teal-600 dark:text-teal-400"
+              >
+                github.com/chukwumaijem/playground-devops
+              </a>
+              .
+            </p>
+            <p>
+              Day to day I work across Docker, Kubernetes, Ansible, GitHub
+              Actions, Prometheus/Grafana, AWS, Linux, and TypeScript/Node when
+              the application layer needs it. I&apos;m open to DevOps, Platform,
+              and junior-mid SRE roles where ownership of pipelines and
+              reliability is real.
             </p>
             <p>
               Outside of engineering I game and read, which keeps me curious

@@ -1,19 +1,54 @@
+import { type Metadata } from 'next';
 import Image from 'next/image';
 
 import { Card } from '~/components/Card';
 import { SimpleLayout } from '~/components/SimpleLayout';
 import logoBlockQueue from '~/images/logos/projects/blockqueue.png';
-import logoFileTools from '~/images/logos/projects/fileTools.jpeg';
 import logoFirmLyt from '~/images/logos/projects/firmlyt.png';
-import logoLudo from '~/images/logos/projects/ludo.jpeg';
 import logoPlaceholder from '~/images/logos/projects/placeholder.png';
 import logoPropertyGovernors from '~/images/logos/projects/propertygovernors.png';
 
+export const metadata: Metadata = {
+  title: 'Projects',
+  description:
+    'Infrastructure labs and production systems: Proxmox/Swarm observability, egress security, Helm on Kubernetes, plus SaaS platforms and open-source tooling.',
+};
+
 const projects = [
+  {
+    name: 'Platform Homelab',
+    description:
+      'Multi-VM Proxmox homelab: Docker Swarm app cluster + dedicated monitoring VM. Label-driven HTTPS with Caddy Docker Proxy, Prometheus/Grafana/Loki/Alertmanager, and Alloy log shipping.',
+    link: {
+      href: 'https://github.com/chukwumaijem/playground-devops',
+      label: 'github.com/chukwumaijem/playground-devops',
+    },
+    logo: logoPlaceholder,
+  },
+  {
+    name: 'Container Egress Gateway',
+    description:
+      'Deny-by-default container egress: direct internet dropped; only host Squid proxy traffic allowed. Ansible-automated Squid, allowlists, and iptables DOCKER-USER rules, validated with a Swarm demo.',
+    link: {
+      href: 'https://github.com/chukwumaijem/playground-devops',
+      label: 'github.com/chukwumaijem/playground-devops',
+    },
+    logo: logoPlaceholder,
+  },
+  {
+    name: 'Helm Multi-Service Packaging',
+    description:
+      'Packaged a multi-tier voting app as Helm charts (umbrella + per-service). Templating, values overrides, and install/upgrade workflows on Minikube and MicroK8s, plus kubeadm multi-node practice.',
+    link: {
+      href: 'https://github.com/chukwumaijem/playground-devops',
+      label: 'github.com/chukwumaijem/playground-devops',
+    },
+    logo: logoPlaceholder,
+  },
   {
     name: 'Property Governors',
     description:
-      'Multi-sided property management SaaS - role-based access, lease workflows, and multi-provider rent collection. Built and operated end-to-end, including cloud infrastructure and deployment pipelines.',
+      'Multi-sided property management SaaS: role-based access, lease workflows, and multi-provider rent collection. Built and operated end-to-end, including cloud infrastructure and deployment pipelines.',
     link: {
       href: 'https://propertygovernors.com',
       label: 'propertygovernors.com',
@@ -23,73 +58,37 @@ const projects = [
   {
     name: 'FirmLyt',
     description:
-      'Legal practice management SaaS for the Nigerian market - case management, client portals, contract tools, and AI-assisted research. Architecture through AWS deployment owned in-house.',
+      'Legal practice management SaaS for the Nigerian market: case management, client portals, contract tools, and AI-assisted research. Architecture through AWS deployment owned in-house.',
     link: { href: 'https://firmlyt.com', label: 'firmlyt.com' },
     logo: logoFirmLyt,
   },
   {
-    name: 'Mailer',
+    name: 'Notifier',
     description:
-      'Self-hostable email orchestration microservice: pluggable templates, dual auth (API keys & HMAC), rate limiting, and Docker-first config for multi-environment deploys.',
+      'Self-hostable email orchestration microservice: pluggable templates, dual auth (API keys and HMAC), rate limiting, and Docker-first config for multi-environment deploys.',
     link: {
-      href: 'https://github.com/blockqueue/mailer',
-      label: 'github.com',
+      href: 'https://github.com/blockqueue/notifier',
+      label: 'github.com/blockqueue/notifier',
     },
     logo: logoBlockQueue,
   },
   {
     name: 'BQ Queue',
     description:
-      'Self-hostable job queue and signed webhook delivery on PostgreSQL / pg-boss - shared scheduling, idempotency, and Docker Compose for multi-service backends.',
+      'Self-hostable job queue and signed webhook delivery on PostgreSQL / pg-boss: shared scheduling, idempotency, and Docker Compose for multi-service backends.',
     link: {
       href: 'https://github.com/blockqueue/bq-queue',
-      label: 'github.com',
+      label: 'github.com/blockqueue/bq-queue',
     },
     logo: logoBlockQueue,
-  },
-  {
-    name: 'File Tools',
-    description:
-      'A collection of tools for manipulating files, including PDFs and images - built and shipped as a live utility product.',
-    link: { href: 'https://thefiletools.com', label: 'thefiletools.com' },
-    logo: logoFileTools,
-  },
-  {
-    name: 'Ludo Game',
-    description:
-      'A multi-player board game developed using React and Electron. Can be extended with socket.io for real-time multiplayer.',
-    link: {
-      href: 'https://github.com/chukwumaijem/ludo-game',
-      label: 'github.com',
-    },
-    logo: logoLudo,
-  },
-  {
-    name: 'JS Gravatar',
-    description: 'Simple JS implementation of the Gravatar image service.',
-    link: {
-      href: 'https://github.com/chukwumaijem/js-gravatar',
-      label: 'github.com',
-    },
-    logo: logoPlaceholder,
-  },
-  {
-    name: 'Roll A Die',
-    description:
-      'A die rolling library for the web, written in JavaScript. Made to be used in the Ludo game.',
-    link: {
-      href: 'https://github.com/chukwumaijem/roll-a-die',
-      label: 'github.com',
-    },
-    logo: logoPlaceholder,
   },
 ];
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I've built and shipped"
-      intro="SaaS products I've owned end-to-end - including their infrastructure - plus open-source tooling for email, queues, and webhook delivery, and a few earlier experiments I'm still proud of."
+      title="Infrastructure labs and systems I've shipped"
+      intro="Homelab and platform work first (orchestration, observability, egress security, Helm), then production SaaS and self-hostable tooling under BlockQueue."
     >
       <ul
         role="list"

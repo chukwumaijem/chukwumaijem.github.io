@@ -27,13 +27,13 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100">
-            Senior Software Engineer - FullStack Products &amp; Platform
-            Infrastructure
+            DevOps / Platform Engineer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&apos;m Chukwuma, a senior software engineer based in Nigeria. I
-            ship full-stack SaaS products and own the CI/CD, cloud, and
-            containerised infrastructure that keeps them reliable in production.
+            I&apos;m Chukwuma, based in Nigeria. I build and operate the systems
+            that ship software reliably: CI/CD, containers, Kubernetes,
+            observability, and secure network defaults. Open to DevOps,
+            Platform, and SRE roles.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink />

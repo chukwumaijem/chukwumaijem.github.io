@@ -8,11 +8,10 @@ import '~/styles/tailwind.css';
 export const metadata: Metadata = {
   title: {
     template: '%s - Chukwuma Zikora',
-    default:
-      'Chukwuma Zikora - Senior Software Engineer | Full-Stack & Platform Infrastructure',
+    default: 'Chukwuma Zikora - DevOps / Platform Engineer',
   },
   description:
-    'Senior software engineer with 10+ years shipping full-stack SaaS - including CI/CD, cloud architecture, containers, and infrastructure automation for production systems.',
+    'DevOps and Platform Engineer with 10+ years of software engineering experience. CI/CD, containers, Kubernetes, observability, and infrastructure automation for production systems.',
 };
 
 export default function RootLayout({
